@@ -108,7 +108,7 @@ Sprint 9 - Final Polish
     [X] Refactor Components
     [X] Improve Reusability
     [X] Run ESLint
-    [ ] Push to GitHub
+    [X] Push to GitHub
     [ ] Deploy to Netlify
     [ ] Write README
     [ ] Add Screenshots
