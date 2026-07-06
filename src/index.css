@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Arabic */
+@font-face {
+  font-family: "Cairo";
+  src: url("/fonts/Cairo-VariableFont_slnt,wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* English */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --font-ar: "Cairo", sans-serif;
+  --font-en: "Inter", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
