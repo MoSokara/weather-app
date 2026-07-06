@@ -16,7 +16,13 @@ import { useTheme } from "../contexts/ThemeContext";
 
 function Header() {
   const { theme, setTheme } = useTheme();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+
+  const styles = {
+    base: "md:rounded-t-md p-3",
+    layout: "flex justify-between items-center",
+    colors: "bg-blue-700 text-amber-50 dark:bg-slate-900",
+  };
 
   // Handles
   function handleThemeButton() {
@@ -26,12 +32,6 @@ function Header() {
   function handleLangButton() {
     i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "ar" : "en");
   }
-
-  const styles = {
-    base: "md:rounded-t-md p-3",
-    layout: "flex justify-between items-center",
-    colors: "bg-blue-700 text-amber-50 dark:bg-slate-900",
-  };
 
   return (
     <div className={`${styles.base} ${styles.layout} ${styles.colors}`}>

@@ -6,11 +6,14 @@ import App from "./App.jsx";
 
 // Providers
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
+import { CityProvider } from "./contexts/CityContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <CityProvider>
+        <App />
+      </CityProvider>
     </ThemeProvider>
   </StrictMode>,
 );

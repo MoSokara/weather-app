@@ -1,19 +1,22 @@
 // Components
 import Container from "./components/Container";
 import Header from "./components/Header";
-import Button from "./components/Button";
 import Main from "./components/Main";
 import LoadingScreen from "./components/LoadingScreen";
-import Details from "./components/Details";
+import ErrorScreen from "./components/errorScreen";
 
 // Hooks
 import { useTranslation } from "react-i18next";
 import { useTheme } from "./contexts/ThemeContext";
+import { useCity } from "./contexts/CityContext";
+import useWeather from "./hooks/useWeather";
 
 function App() {
   const { theme } = useTheme();
-  const { t, i18n } = useTranslation();
-  const dir = i18n.resolvedLanguage === "ar" ? "rtl" : "ltr";
+  const { i18n } = useTranslation();
+  const { city } = useCity();
+  const { weather, loading, error } = useWeather(city);
+
   const styles = {
     layout: "min-h-screen md:flex md:justify-center md:items-center",
     font: i18n.resolvedLanguage === "en" ? "font-en" : "font-ar",
@@ -24,19 +27,36 @@ function App() {
     },
   };
 
-  // const loading = true;
-  // if (loading) {
-  //   return <LoadingScreen />;
-  // }
+  // Loading Handler
+  if (loading) {
+    return (
+      <div
+        className={`${theme} ${styles.font} ${styles.color.dark} ${styles.color.light} ${styles.layout}`}
+      >
+        <LoadingScreen />
+      </div>
+    );
+  }
 
+  // Error Handler
+  if (error) {
+    return (
+      <div
+        className={`w-full flex justify-center items-center ${theme} ${styles.font} ${styles.color.dark} ${styles.color.light} ${styles.layout}`}
+      >
+        <ErrorScreen error={error} />
+      </div>
+    );
+  }
+
+  // Main Render
   return (
     <div
-      className={`relative ${theme} ${styles.font} ${styles.color.dark} ${styles.color.light} ${styles.layout}`}
+      className={`${theme} ${styles.font} ${styles.color.dark} ${styles.color.light} ${styles.layout}`}
     >
       <Container>
         <Header />
-        <Main />
-        {/* <Details /> */}
+        <Main weather={weather} />
       </Container>
     </div>
   );

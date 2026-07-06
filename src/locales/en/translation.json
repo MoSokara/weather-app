@@ -5,7 +5,7 @@
   "low": "Low",
   "sunset": "Sunset",
   "sunrise": "Sunrise",
-  "cloud": "Cloud",
+  "clouds": "Clouds",
   "rain": "Rain",
   "cities": {
     "amman": "Amman, Jordan",
@@ -70,7 +70,7 @@
     "rome": "Rome, Italy",
     "san_francisco": "San Francisco, United States",
     "santiago": "Santiago, Chile",
-    "sao_paulo": "São Paulo, Brazil",
+    "são_paulo": "São Paulo, Brazil",
     "seoul": "Seoul, South Korea",
     "shanghai": "Shanghai, China",
     "singapore": "Singapore, Singapore",

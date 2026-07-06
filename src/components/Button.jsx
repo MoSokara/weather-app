@@ -6,6 +6,7 @@ function Button({ children, ...props }) {
     active: "active:bg-amber-500 dark:active:bg-blue-600",
     transition: "transition transition-discrete duration-150 ease-in-out",
   };
+
   return (
     <button
       className={`${styles.base} ${styles.colors} ${styles.hover} ${styles.active} ${styles.transition}`}
