@@ -3,7 +3,7 @@ import Container from "./components/Container";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import LoadingScreen from "./components/LoadingScreen";
-import ErrorScreen from "./components/errorScreen";
+import ErrorScreen from "./components/ErrorScreen";
 
 // Hooks
 import { useTranslation } from "react-i18next";
