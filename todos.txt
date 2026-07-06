@@ -60,68 +60,56 @@ Sprint 4 - Weather Information
 
 Sprint 5 - Weather API
 -----------------------------------------
-    [ ] Create Axios Service
-    [ ] Create useWeather Hook
-    [ ] Fetch Weather Data
-    [ ] Handle Loading
-    [ ] Handle Errors
-    [ ] Display Weather Data
+    [X] Create Axios Service
+    [X] Create useWeather Hook
+    [X] Fetch Weather Data
+    [X] Handle Loading
+    [X] Handle Errors
+    [X] Display Weather Data
 
 =========================================
 
 Sprint 6 - Dynamic UI
 -----------------------------------------
-    [ ] Dynamic Weather Icon
-    [ ] Loading Animation
-    [ ] Error Screen
-    [ ] Hover Effects
-    [ ] Smooth Transitions
+    [X] Dynamic Weather Icon
+    [X] Loading Animation
+    [X] Error Screen
+    [X] Hover Effects
 
 =========================================
 
-Sprint 7 - Location
+Sprint 7 - Cities
 -----------------------------------------
-    [ ] Create Current Location Button
-    [ ] Request Location Permission
-    [ ] Get Latitude
-    [ ] Get Longitude
-    [ ] Fetch Weather using Coordinates
-    [ ] Handle Permission Denied
+    [X] Create countries.json
+    [X] Add Famous Cities
+    [X] Translation All Cities
+    [X] Create Select Component
+    [X] Save Selected City
+    [X] Update Weather when City Changes
 
 =========================================
 
-Sprint 8 - Cities
+Sprint 8 - Responsive Design
 -----------------------------------------
-    [ ] Create countries.json
-    [ ] Add Famous Cities
-    [ ] Create Select Component
-    [ ] Save Selected City
-    [ ] Update Weather when City Changes
+    [X] Mobile
+    [X] Tablet
+    [X] Laptop
+    [X] Desktop
+    [X] Fix Overflow
+    [X] Improve Spacing
+    [X] Improve Typography
 
 =========================================
 
-Sprint 9 - Responsive Design
+Sprint 9 - Final Polish
 -----------------------------------------
-    [ ] Mobile
-    [ ] Tablet
-    [ ] Laptop
-    [ ] Desktop
-    [ ] Fix Overflow
-    [ ] Improve Spacing
-    [ ] Improve Typography
-
-=========================================
-
-Sprint 10 - Final Polish
------------------------------------------
-    [ ] Remove Dead Code
-    [ ] Remove console.log
-    [ ] Refactor Components
-    [ ] Improve Reusability
-    [ ] Run ESLint
-    [ ] Build Production
-    [ ] Deploy to Netlify
+    [X] Remove Dead Code
+    [X] Remove console.log
+    [X] Refactor Components
+    [X] Improve Reusability
+    [X] Run ESLint
     [ ] Push to GitHub
+    [ ] Deploy to Netlify
     [ ] Write README
     [ ] Add Screenshots
     [ ] Publish on LinkedIn
