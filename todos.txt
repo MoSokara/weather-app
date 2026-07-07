@@ -110,10 +110,10 @@ Sprint 9 - Final Polish
     [X] Run ESLint
     [X] Push to GitHub
     [X] Deploy to Vercel
-    [ ] Write README
-    [ ] Add Screenshots
-    [ ] Publish on LinkedIn
-    [ ] Add to Portfolio
+    [X] Write README
+    [X] Add Screenshots
+    [X] Publish on LinkedIn
+    [X] Add to Portfolio
 
 =========================================
  PROJECT COMPLETED
