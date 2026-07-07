@@ -109,7 +109,7 @@ Sprint 9 - Final Polish
     [X] Improve Reusability
     [X] Run ESLint
     [X] Push to GitHub
-    [ ] Deploy to Netlify
+    [X] Deploy to Vercel
     [ ] Write README
     [ ] Add Screenshots
     [ ] Publish on LinkedIn
